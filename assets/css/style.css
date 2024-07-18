@@ -266,7 +266,7 @@
 	box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.051);
 }
 
-.populate .cours-item:hover .cta-book {
+.populate .cours-item .cta-book:hover {
 	color: var(--white-color);
 	background-color: #ffb900;
 }
@@ -322,4 +322,80 @@
 	font-size: 1.8rem;
 	font-weight: 600;
 	color: var(--primary-color);
+}
+
+/* Feedback */
+.feedback {
+	margin-top: 200px;
+	padding: 96px 0;
+	background: #2e2100;
+}
+
+.feedback .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feedback .character {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.feedback .character .avatar {
+	display: flex;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.feedback .character .title {
+	margin-top: 18px;
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #f7f7f7;
+}
+
+.feedback .character .desc {
+	font-family: Poppins;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.85;
+	color: #bfbcb2;
+}
+
+.feedback .carousel-quote-icons {
+	left: 0;
+	bottom: -28px;
+	position: absolute;
+	display: flex;
+}
+
+.feedback .carousel-quote-icons .icon {
+	cursor: pointer;
+}
+
+.feedback .carousel-quote-icons .icon + .icon {
+	margin-left: 6px;
+}
+
+.feedback .quote {
+	width: 770px;
+	position: relative;
+
+	font-family: Poppins;
+	font-size: 2.6rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.55;
+	color: var(--white-color);
+}
+
+.feedback .quote .icon {
+	top: -28px;
+	left: -30px;
+	position: absolute;
 }
