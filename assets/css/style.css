@@ -7,6 +7,7 @@
 
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 .header .body {
@@ -56,4 +57,269 @@
 
 .btn-signup {
 	margin-left: 70px;
+}
+
+/* Hero */
+.hero {
+	padding: 64px 0;
+	height: calc(100vh - var(--header-height));
+	min-height: 828px;
+	background-color: #fffcf4;
+}
+
+.hero .body {
+	display: flex;
+}
+
+.hero .body .media-block {
+	width: 48%;
+	position: relative;
+}
+
+.hero .body .content-block {
+	width: 52%;
+	padding-top: 64px;
+	padding-left: 130px;
+}
+
+.media-block .hero-img {
+	width: 470px;
+	height: 685px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.media-block .summary {
+	padding: 24px;
+	border-radius: 12px;
+	background-color: var(--white-color);
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.051);
+
+	right: 0;
+	bottom: 48px;
+	position: absolute;
+}
+
+.media-block .summary li {
+	display: flex;
+}
+
+.media-block .summary li + li {
+	margin-top: 14px;
+}
+
+.media-block .summary .wrapper {
+	margin-left: 16px;
+}
+
+.media-block .summary .wrapper .label {
+	font-size: 1.4rem;
+	color: #5f5b53;
+}
+
+.media-block .summary .wrapper .title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.content-block .heading {
+	font-family: Sen;
+	font-size: 5.8rem;
+	font-weight: 700;
+	line-height: 1.18;
+	letter-spacing: -0.02em;
+	color: var(--primary-color);
+}
+
+.content-block .heading-desc {
+	margin-top: 22px;
+}
+
+.content-block .desc {
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #5f5b53;
+}
+
+.content-block .cta-group {
+	margin-top: 38px;
+}
+
+.content-block .cta-group .btn-see-courses {
+	background-color: #ffb900;
+}
+
+.content-block .cta-group .watch-video {
+	margin-left: 28px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+
+	display: inline-flex;
+	align-items: center;
+}
+
+.content-block .cta-group .watch-video .icon {
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.071);
+	border-radius: 50%;
+}
+
+.content-block .cta-group span {
+	margin-left: 14px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.content-block .engagement-desc {
+	margin-top: 48px;
+}
+
+.content-block .stats-number {
+	margin-top: 8px;
+	display: inline-flex;
+	align-items: baseline;
+}
+
+.content-block .stats-number + .stats-number {
+	margin-left: 28px;
+}
+
+.content-block .stats-number strong {
+	font-family: Sen;
+	font-size: 4.4rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+.content-block .stats-number span {
+	margin-left: 16px;
+}
+
+/* Populate */
+.populate {
+	margin-top: 200px;
+}
+
+.populate .title {
+	font-family: Sen;
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: var(--primary-color);
+}
+
+.actions {
+	display: flex;
+
+	top: -50%;
+	right: 0;
+	position: absolute;
+}
+
+.actions button {
+	padding: 0;
+	display: inline-flex;
+
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.actions button + button {
+	margin-left: 18px;
+}
+
+.populate .desc-wrapper {
+	position: relative;
+}
+
+.populate .desc-wrapper .desc {
+	width: 458px;
+	margin-top: 16px;
+	font-size: 1.8rem;
+	color: #5f5b53;
+}
+
+.populate .cours-list {
+	margin-top: 56px;
+	display: flex;
+	justify-content: space-between;
+	/* gap: 30px; */
+}
+
+.populate .cours-item {
+	width: 370px;
+	border: 1px solid #e2dfda;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.populate .cours-item:hover {
+	box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.051);
+}
+
+.populate .cours-item:hover .cta-book {
+	color: var(--white-color);
+	background-color: #ffb900;
+}
+
+.populate .cours-item .image {
+	width: 100%;
+	height: 278px;
+	display: flex;
+
+	object-fit: cover;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.populate .cours-item .body {
+	padding: 16px 22px;
+}
+
+.populate .body .desc {
+	margin-top: 6px;
+	font-size: 1.4rem;
+	line-height: 1.85;
+	color: #5f5b53;
+}
+
+.populate .body .row {
+	display: flex;
+	align-items: center;
+}
+
+.populate .body .row .title {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.populate .body .row .icon {
+	margin-left: auto;
+}
+
+.populate .body .row span {
+	margin-left: 4px;
+	color: #fea31b;
+}
+
+.populate .body .desc + .row {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.populate .body .desc + .row .price {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--primary-color);
 }

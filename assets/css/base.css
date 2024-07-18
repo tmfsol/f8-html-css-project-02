@@ -51,9 +51,11 @@ a {
 	background: var(--primary-color);
 	display: inline-block;
 
+	border: none;
 	color: var(--white-color);
 	font-weight: 600;
 	text-align: center;
+	cursor: pointer;
 }
 
 .btn:hover {
